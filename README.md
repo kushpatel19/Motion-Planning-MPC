@@ -8,11 +8,12 @@ The project compares these methods through simulations, demonstrating their effe
 
 ## Overview
 
-Motion planning is crucial in robotics for navigating environments with dynamic or static obstacles. This project leverages:
-1. **MPC-DC:** A discrete-time model predictive control approach for trajectory optimization.
-2. **MPC-CBF:** An MPC approach integrated with control barrier functions to ensure safety constraints are met.
+Motion planning is a critical aspect of robotics, enabling safe navigation in environments with static and dynamic obstacles. This project implements and evaluates two approaches:
 
-Both methods are evaluated based on their trajectories, computational cost, and ability to avoid obstacles under different conditions.
+1. **MPC-DC:** A discrete-time model predictive control technique for trajectory optimization.
+2. **MPC-CBF:** An MPC approach integrated with control barrier functions to enforce safety constraints.
+
+The robot dynamics are modeled using [The Unicycle Model](https://cooprobo.readthedocs.io/en/latest/mobile/pioneer/model/kinematics.html#the-unicycle-model), and the system is discretized with an RK4 solver. Python and CasADi are utilized for implementation. Both methods are evaluated based on their trajectories, computational cost, and ability to avoid obstacles under different conditions.
 
 ## Results
 
